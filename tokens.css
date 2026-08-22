@@ -1,0 +1,75 @@
+/* ===========================================================
+   LENDEZ STUDIO — DESIGN TOKENS
+   Palette: warm ivory ground, charcoal ink, deep marine accent
+   (chosen over the common AI-default terracotta: marine blue
+   ties to the studio's hospitality/coastal specialization —
+   ocean at dusk — while staying editorial and restrained.)
+   =========================================================== */
+
+:root {
+  /* ---- Color ---- */
+  --color-bg:            #F7F4EC;   /* warm ivory */
+  --color-bg-alt:        #EFE9DC;   /* deeper cream, alternating sections */
+  --color-surface:       #FFFFFF;
+  --color-ink:           #1B1A17;   /* near-black warm charcoal */
+  --color-ink-soft:      #3A3732;
+  --color-muted:         #726C60;   /* secondary text, warm gray */
+  --color-line:          #DCD5C6;   /* hairline rules */
+  --color-line-strong:   #C9C0AC;
+
+  --color-accent:        #1B3A45;   /* deep marine / dusk teal */
+  --color-accent-ink:    #0F262E;   /* accent hover / pressed */
+  --color-accent-tint:   #E4EAE6;   /* accent background tint */
+  --color-accent-soft:   #B8C9C4;   /* accent on dark */
+
+  --color-gold:          #A9825A;   /* secondary accent — used as a whisper, badges/underline only */
+
+  /* ---- Type ---- */
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-body:    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --fs-eyebrow:   0.72rem;
+  --fs-small:     0.875rem;
+  --fs-body:      1.0625rem;
+  --fs-lead:      1.25rem;
+  --fs-h4:        1.5rem;
+  --fs-h3:        clamp(1.6rem, 1.3rem + 1.2vw, 2.25rem);
+  --fs-h2:        clamp(2.1rem, 1.6rem + 2.2vw, 3.4rem);
+  --fs-h1:        clamp(2.6rem, 1.6rem + 4.6vw, 5.4rem);
+
+  --lh-tight: 1.05;
+  --lh-snug:  1.25;
+  --lh-body:  1.6;
+
+  --tracking-wide: 0.14em;
+  --tracking-wider: 0.2em;
+
+  /* ---- Spacing scale ---- */
+  --sp-1: 0.5rem;
+  --sp-2: 0.875rem;
+  --sp-3: 1.5rem;
+  --sp-4: 2.25rem;
+  --sp-5: 3.5rem;
+  --sp-6: 5.5rem;
+  --sp-7: 8.5rem;
+
+  --section-pad: clamp(4.5rem, 4rem + 3vw, 8.5rem);
+  --gutter: clamp(1.5rem, 1rem + 3vw, 4rem);
+  --max-width: 1320px;
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 220ms;
+  --dur-med: 480ms;
+  --dur-slow: 820ms;
+
+  /* ---- Radius ---- */
+  --radius-sm: 3px;
+  --radius-md: 6px;
+}
+
+@media (max-width: 720px) {
+  :root {
+    --section-pad: 4rem;
+  }
+}

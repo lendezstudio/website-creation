@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact | Lendez Studio</title>
+<meta name="description" content="Tell Lendez Studio about your business and what you're looking to improve online. Start your website project today." />
+<link rel="canonical" href="https://lendezstudio.com/contact.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Contact | Lendez Studio" />
+<meta property="og:description" content="Start your website project with Lendez Studio." />
+<meta property="og:url" content="https://lendezstudio.com/contact.html" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/nav-footer.css">
+<link rel="stylesheet" href="css/mockup-hero.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="index.html" class="nav__logo">Lendez<span>.</span> Studio</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="nav__right">
+      <a href="contact.html" class="btn btn--primary">
+        Start Your Project
+        <svg viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <button class="nav__toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="nav__mobile" id="mobile-menu">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ol>
+    <a href="contact.html" class="btn btn--primary">Start Your Project</a>
+    <div class="nav__mobile-meta">
+      <span>Quezon City · PH</span>
+      <a href="https://www.instagram.com/lynethlendez/" target="_blank" rel="noopener">@lynethlendez</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-header wrap reveal">
+    <span class="eyebrow">Contact</span>
+    <h1 class="h1 mt-3">Tell me about your business.</h1>
+    <p class="lead">Whether you're starting from scratch or want to improve an existing website, tell me what you're working on and what you'd like the website to help you achieve.</p>
+  </section>
+
+  <section class="section" style="padding-top: var(--sp-4);">
+    <div class="wrap">
+      <div class="grid grid-2" style="gap: var(--sp-6); align-items:start;">
+
+        <form id="project-form" class="reveal" novalidate>
+          <div class="field-grid">
+            <div class="field">
+              <label for="name">Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name" />
+              <span class="field-error">Please enter your name.</span>
+            </div>
+            <div class="field">
+              <label for="business">Business Name</label>
+              <input type="text" id="business" name="business" autocomplete="organization" />
+            </div>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="email">Email <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+              <span class="field-error">Please enter a valid email address.</span>
+            </div>
+            <div class="field">
+              <label for="phone">Phone / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" />
+            </div>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="website">Current Website <span class="optional">(if any)</span></label>
+              <input type="text" id="website" name="website" placeholder="e.g. facebook.com/yourbusiness" />
+            </div>
+            <div class="field">
+              <label for="industry">Business Industry</label>
+              <input type="text" id="industry" name="industry" placeholder="e.g. beach resort, salon, consulting" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label>What do you need? <span aria-hidden="true">*</span></label>
+            <div class="radio-group" role="radiogroup" aria-label="What do you need">
+              <div class="radio-chip">
+                <input type="radio" id="need-new" name="need" value="New Website" required />
+                <label for="need-new">New Website</label>
+              </div>
+              <div class="radio-chip">
+                <input type="radio" id="need-redesign" name="need" value="Website Redesign" />
+                <label for="need-redesign">Website Redesign</label>
+              </div>
+              <div class="radio-chip">
+                <input type="radio" id="need-hospitality" name="need" value="Hospitality Website" />
+                <label for="need-hospitality">Hospitality Website</label>
+              </div>
+              <div class="radio-chip">
+                <input type="radio" id="need-landing" name="need" value="Landing Page" />
+                <label for="need-landing">Landing Page</label>
+              </div>
+              <div class="radio-chip">
+                <input type="radio" id="need-unsure" name="need" value="Not Sure Yet" />
+                <label for="need-unsure">Not Sure Yet</label>
+              </div>
+            </div>
+            <span class="field-error">Please choose one option.</span>
+          </div>
+
+          <div class="field">
+            <label for="details">Project Details <span aria-hidden="true">*</span></label>
+            <textarea id="details" name="details" required placeholder="Tell me a bit about your business and what you're hoping the website will help with."></textarea>
+            <span class="field-error">Please share a few details about your project.</span>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="budget">Budget Range <span class="optional">(optional)</span></label>
+              <select id="budget" name="budget">
+                <option value="">Prefer not to say</option>
+                <option value="Not sure yet">Not sure yet</option>
+                <option value="Small / just getting started">Small / just getting started</option>
+                <option value="Standard project">Standard project</option>
+                <option value="Larger / multi-page">Larger / multi-page</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="contact-method">Preferred Contact Method <span class="optional">(optional)</span></label>
+              <select id="contact-method" name="contact-method">
+                <option value="">No preference</option>
+                <option value="Email">Email</option>
+                <option value="WhatsApp">WhatsApp</option>
+                <option value="Instagram">Instagram</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn--primary">
+              <span class="btn-label">Tell Me About Your Project</span>
+            </button>
+          </div>
+          <p class="form-note">I usually reply within a couple of business days.</p>
+          <div class="form-status" role="status" aria-live="polite"></div>
+        </form>
+
+        <aside class="reveal">
+          <div class="frame">
+            <div class="frame__bar">
+              <div class="frame__dots"><span></span><span></span><span></span></div>
+              <div class="frame__url">lendezstudio.com/contact</div>
+            </div>
+            <div class="frame__body">
+              <div class="frame__placeholder">
+                <div class="ph-mark">Studio snapshot</div>
+                <div class="ph-path">/images/contact-side.webp</div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h4 class="h4">Prefer to reach out directly?</h4>
+            <p class="body-muted mt-2">Send a message on Instagram — it's often the fastest way to reach me.</p>
+            <a class="text-link mt-3" style="display:inline-flex;" href="https://www.instagram.com/lynethlendez/" target="_blank" rel="noopener">
+              @lynethlendez
+              <svg viewBox="0 0 16 16" fill="none"><path d="M3 13L13 3M13 3H5M13 3V11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer__top">
+    <div>
+      <div class="footer__brand">Lendez Studio</div>
+      <p class="footer__tag">Modern, strategic websites for hospitality brands and growing businesses.</p>
+    </div>
+    <div>
+      <div class="footer__heading">Site</div>
+      <ul class="footer__links">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer__heading">Connect</div>
+      <ul class="footer__links">
+        <li><a href="https://www.instagram.com/lynethlendez/" target="_blank" rel="noopener">Instagram — @lynethlendez</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer__bottom">
+    <span>© <span data-year></span> Lendez Studio. All rights reserved.</span>
+    <span>Designed &amp; built by Lendez Studio.</span>
+  </div>
+</footer>
+
+<script src="js/portfolio-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
