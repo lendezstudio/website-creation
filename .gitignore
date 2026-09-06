@@ -1,0 +1,7 @@
+# Internal docs, not for the public deploy
+LD Business Briefing.pdf
+*.pdf
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
