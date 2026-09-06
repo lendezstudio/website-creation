@@ -498,9 +498,16 @@ section{ position: relative; }
   position: relative;
 }
 .mock-body img{
-  width: 100%; height: 100%; object-fit: cover; object-position: top;
+  width: 100%; height: 100%; object-fit: cover; object-position: center;
   transition: transform 1s var(--ease);
 }
+
+/* Per-image crop tuning so each project's subject stays in frame */
+.mock-body img[src*="the-view"]{ object-position: 50% 44%; }
+.mock-body img[src*="bohol-island-homestay"]{ object-position: 50% 52%; }
+.mock-body img[src*="w-divers-coron"]{ object-position: 50% 46%; }
+.mock-body img[src*="southern-leyte-divers"]{ object-position: 50% 42%; }
+.mock-body img[src*="jd-beach-front-hotel"]{ object-position: 50% 40%; }
 .mock-scene{
   width: 100%; height: 100%;
   display: flex; align-items: center; justify-content: center;
@@ -524,7 +531,25 @@ section{ position: relative; }
   padding-top: 8rem;
   padding-bottom: var(--gap-lg);
   position: relative;
+  overflow: hidden;
 }
+
+.hero::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    linear-gradient(to bottom, rgba(10,19,48,0.30) 55%, var(--ivory) 100%),
+    linear-gradient(105deg, rgba(6,11,29,0.97) 0%, rgba(10,19,48,0.90) 40%, rgba(10,19,48,0.74) 70%, rgba(10,19,48,0.60) 100%),
+    url("../images/bg-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.hero > *{ position: relative; z-index: 1; }
 
 .hero-grid{
   display: grid;
@@ -647,6 +672,99 @@ section{ position: relative; }
 }
 @media (max-width: 560px){
   .industry-grid{ grid-template-columns: 1fr; }
+}
+
+/* ---------- Core services (homepage) ---------- */
+
+.core-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-md);
+}
+.core-card{
+  --core-bg: none;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.75rem, 3vw, 2.75rem);
+  border: 1px solid var(--hairline);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.02);
+  transition: border-color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+}
+.core-card > *{ position: relative; z-index: 1; }
+.core-card:hover{
+  border-color: rgba(255,255,255,0.24);
+  transform: translateY(-3px);
+}
+
+/* Themed photo sitting behind each card, darkened for legible text */
+.core-card::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    linear-gradient(180deg, rgba(10,19,48,0.58) 0%, rgba(10,19,48,0.42) 42%, rgba(10,19,48,0.80) 100%),
+    linear-gradient(107deg, var(--ivory) 4%, rgba(10,19,48,0.90) 38%, rgba(10,19,48,0.62) 72%, rgba(10,19,48,0.46) 100%),
+    var(--core-bg);
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  opacity: 0.95;
+  pointer-events: none;
+  transition: opacity var(--dur-fast) var(--ease), transform var(--dur-slow) var(--ease);
+}
+.core-card:hover::before{ opacity: 1; transform: scale(1.04); }
+.core-card--web{ --core-bg: url("../images/bg-web.jpg"); }
+.core-card--social{ --core-bg: url("../images/bg-social.jpg"); }
+.core-card .core-num{
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: var(--taupe);
+  display: block;
+  margin-bottom: 1rem;
+}
+.core-card h3{
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  margin-bottom: 0.8rem;
+}
+.core-card > p{
+  color: var(--charcoal);
+  max-width: 42ch;
+  margin-bottom: 0;
+}
+.core-list{
+  list-style: none;
+  padding: 0;
+  margin: 1.4rem 0 2rem;
+  display: grid;
+  gap: 0.7rem;
+}
+.core-list li{
+  font-size: 0.95rem;
+  color: var(--charcoal);
+  display: flex;
+  gap: 0.7rem;
+}
+.core-list li::before{
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-top: 0.55em;
+  border-radius: 50%;
+  background: var(--taupe);
+  flex-shrink: 0;
+}
+.core-card .btn{
+  margin-top: auto;
+  align-self: flex-start;
+}
+@media (max-width: 820px){
+  .core-grid{ grid-template-columns: 1fr; }
 }
 
 /* ---------- Portfolio cards ---------- */
@@ -989,9 +1107,24 @@ section{ position: relative; }
   border-color: var(--taupe);
 }
 .field textarea{ resize: vertical; min-height: 120px; }
+.field.invalid input, .field.invalid select, .field.invalid textarea{
+  border-color: #E4572E;
+  background: #FFF6F3;
+}
+.field.invalid input:focus, .field.invalid select:focus, .field.invalid textarea:focus{
+  border-color: #E4572E;
+}
+.field-error{
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: #FF9E86;
+  margin: 0;
+}
 .form-note{ font-size: 0.82rem; color: var(--charcoal); opacity: 0.7; margin-top: 1.2rem; }
 .form-status{ font-family: var(--font-mono); font-size: 0.85rem; margin-top: 1rem; }
+.form-status:empty{ margin: 0; }
 .form-status.ok{ color: var(--sage); }
+.form-status.err{ color: #FF9E86; }
 
 @media (max-width: 620px){ .form-grid{ grid-template-columns: 1fr; } }
 
