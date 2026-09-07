@@ -565,11 +565,25 @@ section{ position: relative; }
 }
 @media (max-width: 900px){
   .hero-grid{ grid-template-columns: 1fr; }
-  .hero-visual{ height: 320px; margin-top: 0.5rem; }
   .hero{ padding-top: 8rem; }
-}
-@media (max-width: 520px){
-  .hero-visual{ height: 240px; }
+  /* On narrow screens the floating cards get clipped, so stack them in flow. */
+  .hero-visual{
+    position: static;
+    height: auto;
+    margin-top: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hero-card,
+  .hero-card.card-1,
+  .hero-card.card-2{
+    position: static;
+    width: 100%;
+    max-width: 440px;
+    animation: none !important;
+  }
+  .hero-card.card-2{ align-self: flex-end; }
 }
 
 /* ---------- Positioning / intro grid ---------- */
