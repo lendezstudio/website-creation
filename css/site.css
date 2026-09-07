@@ -531,7 +531,13 @@ section{ position: relative; }
 }
 
 .hero-visual{ position: relative; height: 500px; }
-.hero-card{ position: absolute; }
+.hero-card{
+  position: absolute;
+  display: block;
+  transition: box-shadow var(--dur-fast) var(--ease);
+}
+.hero-card:hover{ box-shadow: 0 48px 82px -26px rgba(8,19,38,0.58); }
+.hero-card:hover .mock-body img{ transform: scale(1.03); }
 .hero-card.card-1{
   top: 0; right: 0; width: 70%;
   z-index: 2;
