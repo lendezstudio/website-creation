@@ -310,14 +310,11 @@ strong{ color: var(--ink); font-weight: 600; }
 }
 .logo span{ color: var(--blue-600); }
 
-/* Image logo (header): navy badge cropped to the LS monogram lockup */
+/* Image logo (header): transparent LS initials mark, square, no crop */
 .logo-img{
-  height: 38px;
-  width: 38px;
-  border-radius: 10px;
-  object-fit: cover;
-  object-position: 50% 47%;
-  box-shadow: 0 4px 14px -6px rgba(8,19,38,0.4);
+  height: 36px;
+  width: 36px;
+  object-fit: contain;
   display: block;
 }
 
@@ -1413,11 +1410,10 @@ section{ position: relative; }
 .footer-brand .logo{ color: var(--white); font-size: 1.3rem; margin-bottom: 1rem; display: inline-flex; }
 .footer-brand .logo span{ color: var(--blue-400); }
 .footer-brand .logo-img{
-  height: 88px;
-  width: auto;
-  max-width: 240px;
-  border-radius: 12px;
+  height: 52px;
+  width: 52px;
   object-fit: contain;
+  border-radius: 0;
   box-shadow: none;
 }
 .footer-brand p{ color: var(--blue-200); max-width: 34ch; font-size: var(--fs-sm); }
@@ -1482,9 +1478,10 @@ section{ position: relative; }
   .nav-cta{ gap: 0.5rem; }
   .nav-cta .btn-primary{ padding: 0.6rem 0.95rem; font-size: 0.66rem; letter-spacing: 0.05em; }
   .logo{ font-size: 1.05rem; }
-  .logo-img{ height: 34px; width: 34px; }
+  .logo-img{ height: 32px; width: 32px; }
 }
 @media (max-width: 400px){
   .nav-cta .btn-primary .btn-arrow{ display: none; }
   .nav-cta .btn-primary{ padding: 0.55rem 0.8rem; }
+  .logo-img{ height: 30px; width: 30px; }
 }
