@@ -1,5 +1,5 @@
 /* ===========================================================
-   LENDEZ STUDIO — SITE BEHAVIOR
+   LENDEZ STUDIO. SITE BEHAVIOR.
    Shared by every page. No dependencies, no build step.
    =========================================================== */
 
