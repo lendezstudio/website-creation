@@ -175,7 +175,6 @@
         "Current website: " + (get("website") || "None"),
         "Industry: " + get("industry"),
         "What they need: " + get("project_type"),
-        "Budget: " + (get("budget") || "Not specified"),
         "",
         "Project details:",
         get("details")
