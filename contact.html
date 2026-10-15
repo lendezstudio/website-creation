@@ -10,39 +10,39 @@
 <meta property="og:title" content="Contact | Lendez Studio">
 <meta property="og:description" content="Start a website or social media project with Lendez Studio.">
 <meta property="og:url" content="https://lendezstudio.com/contact.html">
-<meta property="og:image" content="https://lendezstudio.com/images/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Lendez Studio website design and social media management">
+<meta property="og:image" content="https://lendezstudio.com/og-image.png">
+<meta property="og:image:width" content="1731">
+<meta property="og:image:height" content="909">
+<meta property="og:image:alt" content="Lendez Studio, website design and social media management">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Contact | Lendez Studio">
 <meta name="twitter:description" content="Start a website or social media project with Lendez Studio.">
-<meta name="twitter:image" content="https://lendezstudio.com/images/og-image.png">
+<meta name="twitter:image" content="https://lendezstudio.com/og-image.png">
 <link rel="icon" type="image/png" href="/images/favicon.png">
 <link rel="apple-touch-icon" href="/images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/site.css">
 </head>
-<body>
+<body class="hero-dark">
 <a class="skip-link" href="#main">Skip to content</a>
+<div class="cursor-dot" aria-hidden="true"></div>
 
 <header class="site-header">
   <div class="wrap nav-inner">
-    <a href="index.html" class="logo" aria-label="Lendez Studio, home"><img class="logo-img" src="images/ls-logo.png" alt="Lendez Studio logo" width="1254" height="1254"><span class="logo-text">Lendez Studio</span></a>
+    <a href="index.html" class="logo" aria-label="Lendez Studio, home"><img src="images/ls-icon.png" alt="" class="logo-icon logo-icon-dark" width="32" height="32"><img src="images/ls-icon-white.png" alt="" class="logo-icon logo-icon-light" width="32" height="32">Lendez <span class="logo-studio">Studio</span></a>
     <nav aria-label="Primary">
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="work.html">Work</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
       </ul>
     </nav>
     <div class="nav-cta">
-      <a href="work.html" class="btn btn-ghost">View Work</a>
-      <a href="contact.html" class="btn btn-primary">Send an Inquiry <span class="btn-arrow">&rarr;</span></a>
+      <a href="contact.html" class="btn btn-primary">Start a Project <span class="btn-arrow">&rarr;</span></a>
     </div>
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -50,13 +50,13 @@
   </div>
 </header>
 
-<div class="mobile-menu">
+<div class="mobile-menu" id="mobile-menu">
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="work.html">Work</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="index.html"><span class="mm-num">01</span>Home</a></li>
+    <li><a href="work.html"><span class="mm-num">02</span>Work</a></li>
+    <li><a href="services.html"><span class="mm-num">03</span>Services</a></li>
+    <li><a href="about.html"><span class="mm-num">04</span>About</a></li>
+    <li><a href="contact.html"><span class="mm-num">05</span>Contact</a></li>
   </ul>
   <div class="mm-foot">
     <a href="mailto:lendezstudio@gmail.com">lendezstudio@gmail.com</a>
@@ -67,15 +67,15 @@
 
 <main id="main">
 
-  <section class="page-head">
-    <div class="wrap reveal is-visible">
-      <span class="eyebrow">Contact</span>
-      <h1>Tell me about the business.</h1>
+  <section class="page-head has-photo-contact">
+    <div class="wrap reveal">
+      <span class="eyebrow">Have Something In Mind?</span>
+      <h1>Let&rsquo;s make it happen.</h1>
       <p class="lede">Use the form, or reach out by email or WhatsApp. Either way, a short description of what you do and what you want to improve is enough to start.</p>
     </div>
   </section>
 
-  <section class="section-pad" style="padding-top:0;">
+  <section class="section-pad" style="padding-top:var(--gap-md)">
     <div class="wrap contact-grid">
 
       <div class="contact-side reveal">
@@ -170,7 +170,7 @@
               <textarea id="details" name="details" required placeholder="What does the business do, and what should the website or social media help it accomplish?"></textarea>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary mt-lg">Send an Inquiry <span class="btn-arrow">&rarr;</span></button>
+          <button type="submit" class="btn btn-primary mt-lg">Start a Project <span class="btn-arrow">&rarr;</span></button>
           <p class="form-note">Submitting opens your email app with these details filled in, addressed to lendezstudio@gmail.com. It does not guarantee a quote, a timeline, or availability. Prefer WhatsApp? <a href="https://wa.me/639050961412" target="_blank" rel="noopener" class="tlink">Message directly instead.</a></p>
           <p class="form-status" id="form-status" role="status"></p>
         </form>
@@ -189,23 +189,23 @@
       </div>
       <div class="faq-list reveal">
         <details class="faq-item">
-          <summary>What kinds of businesses do you work with?</summary>
+          <summary><span>What kinds of businesses do you work with?</span><span class="q-icon" aria-hidden="true"></span></summary>
           <div class="faq-a"><p>Businesses across different industries, including construction, restaurants, hospitality, financial and professional services, local businesses, and personal brands. If you are not sure the studio is a fit, describe the business and I will tell you.</p></div>
         </details>
         <details class="faq-item">
-          <summary>Who will I actually be working with?</summary>
+          <summary><span>Who will I actually be working with?</span><span class="q-icon" aria-hidden="true"></span></summary>
           <div class="faq-a"><p>Lyneth, directly, from the first conversation through to launch. There is no account manager passing messages along.</p></div>
         </details>
         <details class="faq-item">
-          <summary>Can I get social media management without a website?</summary>
+          <summary><span>Can I get social media management without a website?</span><span class="q-icon" aria-hidden="true"></span></summary>
           <div class="faq-a"><p>Yes. Social media management is its own service line. It runs on its own or alongside a site, whichever the business needs.</p></div>
         </details>
         <details class="faq-item">
-          <summary>What does the process look like?</summary>
-          <div class="faq-a"><p>Five steps: Discover, Strategy, Design and Build, Refine, Launch. You bring the knowledge of your business. You do not need to follow the technical side.</p></div>
+          <summary><span>What does the process look like?</span><span class="q-icon" aria-hidden="true"></span></summary>
+          <div class="faq-a"><p>Four steps: Discover, Define, Design &amp; Develop, Launch &amp; Refine. You bring the knowledge of your business. You do not need to follow the technical side.</p></div>
         </details>
         <details class="faq-item">
-          <summary>How much will it cost?</summary>
+          <summary><span>How much will it cost?</span><span class="q-icon" aria-hidden="true"></span></summary>
           <div class="faq-a"><p>Every project is quoted to its scope, since a one-page launch and a full multi-page site are different jobs. Share a rough budget in your message and I will tell you early whether it lines up.</p></div>
         </details>
       </div>
@@ -218,8 +218,8 @@
   <div class="wrap">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="index.html" class="logo" aria-label="Lendez Studio, home"><img class="logo-img" src="images/ls-logo.png" alt="Lendez Studio logo" width="1254" height="1254"><span class="logo-text">Lendez Studio</span></a>
-        <p>The independent website and social media studio of Lyneth Lendez, based in Pasig City. One person, from the first conversation through to launch.</p>
+        <a href="index.html" class="logo" aria-label="Lendez Studio, home"><img src="images/ls-icon-white.png" alt="" class="logo-icon" width="32" height="32">Lendez <span class="logo-studio">Studio</span></a>
+        <p>An independent website and social media studio based in Pasig City, Philippines.</p>
       </div>
       <div class="footer-col">
         <h4>Navigate</h4>
@@ -237,7 +237,7 @@
           <li><a href="mailto:lendezstudio@gmail.com">lendezstudio@gmail.com</a></li>
           <li><a href="tel:+639050961412">+63 905 096 1412</a></li>
           <li><a href="https://wa.me/639050961412" target="_blank" rel="noopener">Message on WhatsApp</a></li>
-          <li><span class="muted">Pasig City, Philippines</span></li>
+          <li><span class="muted" style="color:var(--on-ink-faint)">Pasig City, Philippines</span></li>
         </ul>
         <div class="social-icons footer-social">
           <a href="https://www.instagram.com/lynethlendez/" target="_blank" rel="noopener" aria-label="Instagram">
@@ -257,7 +257,7 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; <span data-year></span> Lendez Studio</span>
-      <span>Websites and social media, Pasig City</span>
+      <a href="about.html">Designed by Lendez Studio</a>
     </div>
   </div>
 </footer>

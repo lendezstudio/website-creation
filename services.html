@@ -10,39 +10,39 @@
 <meta property="og:title" content="Services | Lendez Studio">
 <meta property="og:description" content="Websites and social media management from Lendez Studio.">
 <meta property="og:url" content="https://lendezstudio.com/services.html">
-<meta property="og:image" content="https://lendezstudio.com/images/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Lendez Studio website design and social media management">
+<meta property="og:image" content="https://lendezstudio.com/og-image.png">
+<meta property="og:image:width" content="1731">
+<meta property="og:image:height" content="909">
+<meta property="og:image:alt" content="Lendez Studio, website design and social media management">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Services | Lendez Studio">
 <meta name="twitter:description" content="Websites and social media management from Lendez Studio.">
-<meta name="twitter:image" content="https://lendezstudio.com/images/og-image.png">
+<meta name="twitter:image" content="https://lendezstudio.com/og-image.png">
 <link rel="icon" type="image/png" href="/images/favicon.png">
 <link rel="apple-touch-icon" href="/images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/site.css">
 </head>
-<body>
+<body class="hero-dark">
 <a class="skip-link" href="#main">Skip to content</a>
+<div class="cursor-dot" aria-hidden="true"></div>
 
 <header class="site-header">
   <div class="wrap nav-inner">
-    <a href="index.html" class="logo" aria-label="Lendez Studio, home"><img class="logo-img" src="images/ls-logo.png" alt="Lendez Studio logo" width="1254" height="1254"><span class="logo-text">Lendez Studio</span></a>
+    <a href="index.html" class="logo" aria-label="Lendez Studio, home"><img src="images/ls-icon.png" alt="" class="logo-icon logo-icon-dark" width="32" height="32"><img src="images/ls-icon-white.png" alt="" class="logo-icon logo-icon-light" width="32" height="32">Lendez <span class="logo-studio">Studio</span></a>
     <nav aria-label="Primary">
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="work.html">Work</a></li>
-        <li><a href="services.html" class="active" aria-current="page">Services</a></li>
+        <li><a href="services.html" aria-current="page">Services</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <div class="nav-cta">
-      <a href="work.html" class="btn btn-ghost">View Work</a>
-      <a href="contact.html" class="btn btn-primary">Send an Inquiry <span class="btn-arrow">&rarr;</span></a>
+      <a href="contact.html" class="btn btn-primary">Start a Project <span class="btn-arrow">&rarr;</span></a>
     </div>
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -50,13 +50,13 @@
   </div>
 </header>
 
-<div class="mobile-menu">
+<div class="mobile-menu" id="mobile-menu">
   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="work.html">Work</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="index.html"><span class="mm-num">01</span>Home</a></li>
+    <li><a href="work.html"><span class="mm-num">02</span>Work</a></li>
+    <li><a href="services.html"><span class="mm-num">03</span>Services</a></li>
+    <li><a href="about.html"><span class="mm-num">04</span>About</a></li>
+    <li><a href="contact.html"><span class="mm-num">05</span>Contact</a></li>
   </ul>
   <div class="mm-foot">
     <a href="mailto:lendezstudio@gmail.com">lendezstudio@gmail.com</a>
@@ -67,21 +67,22 @@
 
 <main id="main">
 
-  <section class="page-head page-head--photo ph-code">
-    <div class="wrap reveal is-visible">
+  <section class="page-head has-photo-services">
+    <div class="wrap reveal">
       <span class="eyebrow">Services</span>
       <h1>Two services, and the range around them.</h1>
       <p class="lede">Website design and development, and social media management. Take one, or run both so a website and a feed say the same thing in the same voice.</p>
     </div>
   </section>
 
-  <section class="section-pad" style="padding-top:var(--gap-lg);">
+  <section class="section-pad" style="padding-top:var(--gap-md)">
     <div class="wrap">
 
       <div class="svc-row reveal" id="websites">
-        <div class="svc-body">
-          <span class="s-index">01 / Website Design and Development</span>
-          <h3>A custom website, built around the business</h3>
+        <span class="svc-num">01</span>
+        <div class="svc-main">
+          <span class="muted">Website Design &amp; Development</span>
+          <p class="svc-tagline">A custom website, built around the business.</p>
           <p>Designed around the business, its customers, and its goals, and built to work properly on every screen. No template chosen before the thinking.</p>
           <ul class="svc-list">
             <li>Custom design and responsive build</li>
@@ -90,18 +91,19 @@
             <li>Image galleries, maps, and location details</li>
             <li>Social media links woven in</li>
           </ul>
-          <a href="work.html" class="link-cta">See recent work <span class="btn-arrow">&rarr;</span></a>
+          <a href="work.html" class="link-cta mt-lg" style="display:inline-flex">See recent work <span class="btn-arrow">&rarr;</span></a>
         </div>
-        <div class="svc-media mask-reveal">
+        <div class="svc-media">
           <img src="images/pexels-pixabay-39559.jpg" alt="A tablet showing a clean business website" width="2000" height="1328">
-          <span class="svc-tag">Website design</span>
+          <span class="svc-tag">Website Design</span>
         </div>
       </div>
 
-      <div class="svc-row flip reveal" id="social">
-        <div class="svc-body">
-          <span class="s-index">02 / Social Media Management</span>
-          <h3>A steady presence you do not have to run</h3>
+      <div class="svc-row reveal" id="social">
+        <span class="svc-num">02</span>
+        <div class="svc-main">
+          <span class="muted">Social Media Management</span>
+          <p class="svc-tagline">A steady presence you do not have to run.</p>
           <p>An equal service line, not an extra on a website invoice. I plan, create, and schedule content so the account stays active and on brand while you stay focused on the work.</p>
           <ul class="svc-list">
             <li>A consistent presence customers can rely on</li>
@@ -110,49 +112,29 @@
             <li>A feed that matches how you want the brand seen</li>
             <li>A clearer reason for people to follow and engage</li>
           </ul>
-          <p class="accounts-label">Accounts I have managed</p>
-          <ul class="account-list">
-            <li>
-              <a href="https://www.instagram.com/llyricsoap/" target="_blank" rel="noopener" aria-label="llyricsoap on Instagram">
-                <span class="account-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.41.55.2.99.44 1.4.86.42.41.66.85.86 1.4.17.46.36 1.26.41 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.41 2.43-.2.55-.44.99-.86 1.4-.41.42-.85.66-1.4.86-.46.17-1.26.36-2.43.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.41-.55-.2-.99-.44-1.4-.86-.42-.41-.66-.85-.86-1.4-.17-.46-.36-1.26-.41-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.41-2.43.2-.55.44-.99.86-1.4.41-.42.85-.66 1.4-.86.46-.17 1.26-.36 2.43-.41C8.42 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.5.01-4.73.07-.96.04-1.48.2-1.82.34-.46.18-.78.39-1.13.73-.34.35-.55.67-.73 1.13-.14.34-.3.86-.34 1.82-.06 1.23-.07 1.58-.07 4.73s.01 3.5.07 4.73c.04.96.2 1.48.34 1.82.18.46.39.78.73 1.13.35.34.67.55 1.13.73.34.14.86.3 1.82.34 1.23.06 1.58.07 4.73.07s3.5-.01 4.73-.07c.96-.04 1.48-.2 1.82-.34.46-.18.78-.39 1.13-.73.34-.35.55-.67.73-1.13.14-.34.3-.86.34-1.82.06-1.23.07-1.58.07-4.73s-.01-3.5-.07-4.73c-.04-.96-.2-1.48-.34-1.82-.18-.46-.39-.78-.73-1.13-.35-.34-.67-.55-1.13-.73-.34-.14-.86-.3-1.82-.34C15.5 4.01 15.15 4 12 4zm0 3.4a4.6 4.6 0 1 1 0 9.2 4.6 4.6 0 0 1 0-9.2zm0 1.8a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6zm5.85-2a1.08 1.08 0 1 1-2.15 0 1.08 1.08 0 0 1 2.15 0z"/></svg></span>
-                <span class="account-text">
-                  <span class="account-handle">@llyricsoap</span>
-                  <span class="account-note">Instagram, soap and personal care</span>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/tutorme.bali/" target="_blank" rel="noopener" aria-label="tutorme.bali on Instagram">
-                <span class="account-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.41.55.2.99.44 1.4.86.42.41.66.85.86 1.4.17.46.36 1.26.41 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.41 2.43-.2.55-.44.99-.86 1.4-.41.42-.85.66-1.4.86-.46.17-1.26.36-2.43.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.41-.55-.2-.99-.44-1.4-.86-.42-.41-.66-.85-.86-1.4-.17-.46-.36-1.26-.41-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.41-2.43.2-.55.44-.99.86-1.4.41-.42.85-.66 1.4-.86.46-.17 1.26-.36 2.43-.41C8.42 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.5.01-4.73.07-.96.04-1.48.2-1.82.34-.46.18-.78.39-1.13.73-.34.35-.55.67-.73 1.13-.14.34-.3.86-.34 1.82-.06 1.23-.07 1.58-.07 4.73s.01 3.5.07 4.73c.04.96.2 1.48.34 1.82.18.46.39.78.73 1.13.35.34.67.55 1.13.73.34.14.86.3 1.82.34 1.23.06 1.58.07 4.73.07s3.5-.01 4.73-.07c.96-.04 1.48-.2 1.82-.34.46-.18.78-.39 1.13-.73.34-.35.55-.67.73-1.13.14-.34.3-.86.34-1.82.06-1.23.07-1.58.07-4.73s-.01-3.5-.07-4.73c-.04-.96-.2-1.48-.34-1.82-.18-.46-.39-.78-.73-1.13-.35-.34-.67-.55-1.13-.73-.34-.14-.86-.3-1.82-.34C15.5 4.01 15.15 4 12 4zm0 3.4a4.6 4.6 0 1 1 0 9.2 4.6 4.6 0 0 1 0-9.2zm0 1.8a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6zm5.85-2a1.08 1.08 0 1 1-2.15 0 1.08 1.08 0 0 1 2.15 0z"/></svg></span>
-                <span class="account-text">
-                  <span class="account-handle">@tutorme.bali</span>
-                  <span class="account-note">Instagram, tutoring service in Bali</span>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.tiktok.com/@gogetitvibez" target="_blank" rel="noopener" aria-label="gogetitvibez on TikTok">
-                <span class="account-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.5 2h2.7c.16 1.1.7 2.08 1.5 2.8.8.7 1.83 1.14 2.97 1.2v2.75a7.6 7.6 0 0 1-4.47-1.42v6.8c0 3.4-2.77 6.17-6.18 6.17A6.18 6.18 0 0 1 5 14.13a6.18 6.18 0 0 1 6.18-6.18c.32 0 .63.02.93.07v2.83a3.4 3.4 0 0 0-.93-.13 3.4 3.4 0 1 0 3.4 3.4V2z"/></svg></span>
-                <span class="account-text">
-                  <span class="account-handle">@gogetitvibez</span>
-                  <span class="account-note">TikTok</span>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/@Purrykingdom" target="_blank" rel="noopener" aria-label="Purrykingdom on TikTok and YouTube">
-                <span class="account-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.5a3 3 0 0 0-2.11-2.12C19.5 3.86 12 3.86 12 3.86s-7.5 0-9.39.52A3 3 0 0 0 .5 6.5C0 8.4 0 12 0 12s0 3.6.5 5.5a3 3 0 0 0 2.11 2.12C4.5 20.14 12 20.14 12 20.14s7.5 0 9.39-.52A3 3 0 0 0 23.5 17.5c.5-1.9.5-5.5.5-5.5s0-3.6-.5-5.5zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></span>
-                <span class="account-text">
-                  <span class="account-handle">@Purrykingdom</span>
-                  <span class="account-note">TikTok and YouTube, pet and cat content</span>
-                </span>
-              </a>
-            </li>
-          </ul>
+          <div class="svc-accounts">
+            <span class="svc-accounts-label">Accounts I Have Managed</span>
+            <a href="https://www.instagram.com/llyricsoap/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.41.55.2.99.44 1.4.86.42.41.66.85.86 1.4.17.46.36 1.26.41 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.41 2.43-.2.55-.44.99-.86 1.4-.41.42-.85.66-1.4.86-.46.17-1.26.36-2.43.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.41-.55-.2-.99-.44-1.4-.86-.42-.41-.66-.85-.86-1.4-.17-.46-.36-1.26-.41-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.41-2.43.2-.55.44-.99.86-1.4.41-.42.85-.66 1.4-.86.46-.17 1.26-.36 2.43-.41C8.42 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.5.01-4.73.07-.96.04-1.48.2-1.82.34-.46.18-.78.39-1.13.73-.34.35-.55.67-.73 1.13-.14.34-.3.86-.34 1.82-.06 1.23-.07 1.58-.07 4.73s.01 3.5.07 4.73c.04.96.2 1.48.34 1.82.18.46.39.78.73 1.13.35.34.67.55 1.13.73.34.14.86.3 1.82.34 1.23.06 1.58.07 4.73.07s3.5-.01 4.73-.07c.96-.04 1.48-.2 1.82-.34.46-.18.78-.39 1.13-.73.34-.35.55-.67.73-1.13.14-.34.3-.86.34-1.82.06-1.23.07-1.58.07-4.73s-.01-3.5-.07-4.73c-.04-.96-.2-1.48-.34-1.82-.18-.46-.39-.78-.73-1.13-.35-.34-.67-.55-1.13-.73-.34-.14-.86-.3-1.82-.34C15.5 4.01 15.15 4 12 4zm0 3.4a4.6 4.6 0 1 1 0 9.2 4.6 4.6 0 0 1 0-9.2zm0 1.8a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6zm5.85-2a1.08 1.08 0 1 1-2.15 0 1.08 1.08 0 0 1 2.15 0z"/></svg>
+              @llyricsoap <span class="acc-note">&middot; soap &amp; personal care</span>
+            </a>
+            <a href="https://www.instagram.com/tutorme.bali/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.41.55.2.99.44 1.4.86.42.41.66.85.86 1.4.17.46.36 1.26.41 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.41 2.43-.2.55-.44.99-.86 1.4-.41.42-.85.66-1.4.86-.46.17-1.26.36-2.43.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.41-.55-.2-.99-.44-1.4-.86-.42-.41-.66-.85-.86-1.4-.17-.46-.36-1.26-.41-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.41-2.43.2-.55.44-.99.86-1.4.41-.42.85-.66 1.4-.86.46-.17 1.26-.36 2.43-.41C8.42 2.21 8.8 2.2 12 2.2zm0 1.8c-3.15 0-3.5.01-4.73.07-.96.04-1.48.2-1.82.34-.46.18-.78.39-1.13.73-.34.35-.55.67-.73 1.13-.14.34-.3.86-.34 1.82-.06 1.23-.07 1.58-.07 4.73s.01 3.5.07 4.73c.04.96.2 1.48.34 1.82.18.46.39.78.73 1.13.35.34.67.55 1.13.73.34.14.86.3 1.82.34 1.23.06 1.58.07 4.73.07s3.5-.01 4.73-.07c.96-.04 1.48-.2 1.82-.34.46-.18.78-.39 1.13-.73.34-.35.55-.67.73-1.13.14-.34.3-.86.34-1.82.06-1.23.07-1.58.07-4.73s-.01-3.5-.07-4.73c-.04-.96-.2-1.48-.34-1.82-.18-.46-.39-.78-.73-1.13-.35-.34-.67-.55-1.13-.73-.34-.14-.86-.3-1.82-.34C15.5 4.01 15.15 4 12 4zm0 3.4a4.6 4.6 0 1 1 0 9.2 4.6 4.6 0 0 1 0-9.2zm0 1.8a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6zm5.85-2a1.08 1.08 0 1 1-2.15 0 1.08 1.08 0 0 1 2.15 0z"/></svg>
+              @tutorme.bali <span class="acc-note">&middot; tutoring service in Bali</span>
+            </a>
+            <a href="https://www.tiktok.com/@gogetitvibez" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.5 2h2.7c.16 1.1.7 2.08 1.5 2.8.8.7 1.83 1.14 2.97 1.2v2.75a7.6 7.6 0 0 1-4.47-1.42v6.8c0 3.4-2.77 6.17-6.18 6.17A6.18 6.18 0 0 1 5 14.13a6.18 6.18 0 0 1 6.18-6.18c.32 0 .63.02.93.07v2.83a3.4 3.4 0 0 0-.93-.13 3.4 3.4 0 1 0 3.4 3.4V2z"/></svg>
+              @gogetitvibez <span class="acc-note">&middot; TikTok</span>
+            </a>
+            <a href="https://www.youtube.com/@Purrykingdom" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.5a3 3 0 0 0-2.11-2.12C19.5 3.86 12 3.86 12 3.86s-7.5 0-9.39.52A3 3 0 0 0 .5 6.5C0 8.4 0 12 0 12s0 3.6.5 5.5a3 3 0 0 0 2.11 2.12C4.5 20.14 12 20.14 12 20.14s7.5 0 9.39-.52A3 3 0 0 0 23.5 17.5c.5-1.9.5-5.5.5-5.5s0-3.6-.5-5.5zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+              @Purrykingdom <span class="acc-note">&middot; pet &amp; cat content</span>
+            </a>
+          </div>
         </div>
-        <div class="svc-media mask-reveal">
-          <img src="images/pexels-plann-2999237-4549414.jpg" alt="Planning a social feed on a phone next to a scheduling tool on a laptop" width="2000" height="1333">
-          <span class="svc-tag">Social media management</span>
+        <div class="svc-media">
+          <img src="images/pexels-visual-tag-mx-1321732-5361087.jpg" alt="Scrabble tiles spelling social media" width="2000" height="1347">
+          <span class="svc-tag">Social Media</span>
         </div>
       </div>
     </div>
@@ -167,37 +149,13 @@
         </div>
         <p class="lede">Different starting points, same approach. Understand the business, then build what its customers need.</p>
       </div>
-      <div class="also-grid reveal">
-        <div class="also-cell">
-          <span class="a-num">01</span>
-          <h3>Business Websites</h3>
-          <p>Credibility-first sites for service businesses, consultants, and local companies, structured for inquiries and calls.</p>
-        </div>
-        <div class="also-cell">
-          <span class="a-num">02</span>
-          <h3>Booking and Accommodation Sites</h3>
-          <p>Accommodation pages, rates, galleries, amenities, direct inquiry forms, and booking links for stays, venues, tours, and similar businesses.</p>
-        </div>
-        <div class="also-cell">
-          <span class="a-num">03</span>
-          <h3>Landing Pages</h3>
-          <p>Focused pages built around a single offer, campaign, or launch, kept lean and built to convert.</p>
-        </div>
-        <div class="also-cell">
-          <span class="a-num">04</span>
-          <h3>Website Redesigns</h3>
-          <p>For a site that works but undersells the business: better presentation, clearer navigation, a stronger path for customers.</p>
-        </div>
-        <div class="also-cell">
-          <span class="a-num">05</span>
-          <h3>E-commerce</h3>
-          <p>Product presentation and a conversion-focused journey, scoped case by case to what the business actually sells.</p>
-        </div>
-        <div class="also-cell">
-          <span class="a-num">06</span>
-          <h3>Not Sure Yet</h3>
-          <p>Tell me about the business and what it needs to do. The right starting point usually becomes clear quickly.</p>
-        </div>
+      <div class="outcome-grid reveal">
+        <div class="outcome-card"><span class="oc-num">01</span><h3>Business Websites</h3><p>Credibility-first sites for service businesses, consultants, and local companies, structured for inquiries and calls.</p></div>
+        <div class="outcome-card"><span class="oc-num">02</span><h3>Booking &amp; Accommodation Sites</h3><p>Accommodation pages, rates, galleries, amenities, direct inquiry forms, and booking links for stays, venues, tours, and similar businesses.</p></div>
+        <div class="outcome-card"><span class="oc-num">03</span><h3>Landing Pages</h3><p>Focused pages built around a single offer, campaign, or launch, kept lean and built to convert.</p></div>
+        <div class="outcome-card"><span class="oc-num">04</span><h3>Website Redesigns</h3><p>For a site that works but undersells the business: better presentation, clearer navigation, a stronger path for customers.</p></div>
+        <div class="outcome-card"><span class="oc-num">05</span><h3>E-commerce</h3><p>Product presentation and a conversion-focused journey, scoped case by case to what the business actually sells.</p></div>
+        <div class="outcome-card"><span class="oc-num">06</span><h3>Not Sure Yet</h3><p>Tell me about the business and what it needs to do. The right starting point usually becomes clear quickly.</p></div>
       </div>
     </div>
   </section>
@@ -205,7 +163,7 @@
   <section class="section-pad">
     <div class="wrap">
       <!-- BUSINESS OWNER TO CONFIRM: add an indicative starting figure or range here once one is set.
-           Brief section 13 lists pricing as unconfirmed, so no number is shown rather than inventing one. -->
+           No number is shown rather than inventing one. -->
       <div class="pricebox reveal">
         <div>
           <span class="eyebrow">Pricing</span>
@@ -220,7 +178,7 @@
     </div>
   </section>
 
-  <section class="section-pad band-tint">
+  <section class="section-pad on-ink">
     <div class="wrap">
       <div class="section-head reveal">
         <div>
@@ -229,26 +187,26 @@
         </div>
         <p class="lede">You do not need to follow the technical side to work with the studio. Just your own business.</p>
       </div>
-      <div class="process-list reveal">
+      <div class="process-grid reveal">
         <div class="process-item">
-          <span class="p-num">01</span>
-          <div><h3>Discover</h3><p>Understand the business, its customers, its goals, and what the work needs to accomplish.</p></div>
+          <span class="process-num">01</span>
+          <h3>Discover</h3>
+          <p>Understand the business, its customers, its goals, and what the work needs to accomplish.</p>
         </div>
         <div class="process-item">
-          <span class="p-num">02</span>
-          <div><h3>Strategy</h3><p>Plan the structure, the customer journey, the content hierarchy, and the visual direction.</p></div>
+          <span class="process-num">02</span>
+          <h3>Define</h3>
+          <p>Plan the structure, the customer journey, the content hierarchy, and the visual direction.</p>
         </div>
         <div class="process-item">
-          <span class="p-num">03</span>
-          <div><h3>Design and Build</h3><p>Build the responsive site with considered design, content, and interaction.</p></div>
+          <span class="process-num">03</span>
+          <h3>Design &amp; Develop</h3>
+          <p>Build the responsive site with considered design, content, and interaction, reviewing as it comes together.</p>
         </div>
         <div class="process-item">
-          <span class="p-num">04</span>
-          <div><h3>Refine</h3><p>Review the work together and make the agreed revisions.</p></div>
-        </div>
-        <div class="process-item">
-          <span class="p-num">05</span>
-          <div><h3>Launch</h3><p>Connect the domain, check the details, and take it live.</p></div>
+          <span class="process-num">04</span>
+          <h3>Launch &amp; Refine</h3>
+          <p>Connect the domain, check every detail, take it live, and make the agreed refinements.</p>
         </div>
       </div>
     </div>
@@ -259,7 +217,7 @@
       <h2>Not sure which one fits? That is the first conversation.</h2>
       <p>Tell me about the business and what it needs. The right service usually becomes obvious fast.</p>
       <div class="hero-ctas">
-        <a href="contact.html" class="btn btn-primary">Send an Inquiry <span class="btn-arrow">&rarr;</span></a>
+        <a href="contact.html" class="btn btn-primary">Start a Project <span class="btn-arrow">&rarr;</span></a>
         <a href="https://wa.me/639050961412" target="_blank" rel="noopener" class="btn btn-ghost">Message on WhatsApp</a>
       </div>
     </div>
@@ -271,8 +229,8 @@
   <div class="wrap">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="index.html" class="logo" aria-label="Lendez Studio, home"><img class="logo-img" src="images/ls-logo.png" alt="Lendez Studio logo" width="1254" height="1254"><span class="logo-text">Lendez Studio</span></a>
-        <p>The independent website and social media studio of Lyneth Lendez, based in Pasig City. One person, from the first conversation through to launch.</p>
+        <a href="index.html" class="logo" aria-label="Lendez Studio, home"><img src="images/ls-icon-white.png" alt="" class="logo-icon" width="32" height="32">Lendez <span class="logo-studio">Studio</span></a>
+        <p>An independent website and social media studio based in Pasig City, Philippines.</p>
       </div>
       <div class="footer-col">
         <h4>Navigate</h4>
@@ -290,7 +248,7 @@
           <li><a href="mailto:lendezstudio@gmail.com">lendezstudio@gmail.com</a></li>
           <li><a href="tel:+639050961412">+63 905 096 1412</a></li>
           <li><a href="https://wa.me/639050961412" target="_blank" rel="noopener">Message on WhatsApp</a></li>
-          <li><span class="muted">Pasig City, Philippines</span></li>
+          <li><span class="muted" style="color:var(--on-ink-faint)">Pasig City, Philippines</span></li>
         </ul>
         <div class="social-icons footer-social">
           <a href="https://www.instagram.com/lynethlendez/" target="_blank" rel="noopener" aria-label="Instagram">
@@ -310,7 +268,7 @@
     </div>
     <div class="footer-bottom">
       <span>&copy; <span data-year></span> Lendez Studio</span>
-      <span>Websites and social media, Pasig City</span>
+      <a href="about.html">Designed by Lendez Studio</a>
     </div>
   </div>
 </footer>
