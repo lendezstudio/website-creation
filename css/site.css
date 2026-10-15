@@ -454,8 +454,8 @@ section{ position: relative; }
   .size-wide .work-card-media, .size-feature .work-card-media{ aspect-ratio: 4/3.3; }
 }
 
-.work-intro{ display: flex; justify-content: space-between; align-items: flex-end; gap: var(--gap-md); margin-bottom: var(--gap-lg); flex-wrap: wrap; }
-.work-intro p{ max-width: 52ch; }
+.work-intro{ display: flex; flex-direction: column; align-items: flex-start; gap: var(--gap-sm); margin-bottom: var(--gap-lg); }
+.work-intro p{ max-width: 62ch; }
 .work-note{ margin: var(--gap-lg) 0 0; padding: 1.6rem 1.9rem; border: 1px solid var(--line-paper); border-radius: var(--radius); background: var(--paper); }
 .on-ink .work-note{ border-color: var(--line-ink); background: var(--ink-2); }
 .work-note p{ margin: 0; font-size: 0.92rem; }
