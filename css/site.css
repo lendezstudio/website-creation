@@ -57,6 +57,19 @@
   --dur-slow: 1s;
 
   --max-w: 1360px;
+
+  /* ---- Photo scrim darkness (lighter on mobile, see media query) ---- */
+  --scrim-1: 0.91;
+  --scrim-2: 0.83;
+  --scrim-3: 0.93;
+}
+
+@media (max-width: 680px){
+  :root{
+    --scrim-1: 0.68;
+    --scrim-2: 0.6;
+    --scrim-3: 0.74;
+  }
 }
 
 *, *::before, *::after{ box-sizing: border-box; }
@@ -293,7 +306,7 @@ section{ position: relative; }
   display: flex; flex-direction: column; justify-content: center;
   padding-top: 7.5rem; padding-bottom: var(--gap-lg);
   background:
-    linear-gradient(180deg, rgba(10,10,10,0.90) 0%, rgba(10,10,10,0.84) 50%, rgba(10,10,10,0.94) 100%),
+    linear-gradient(180deg, rgba(10,10,10,var(--scrim-1)) 0%, rgba(10,10,10,var(--scrim-2)) 50%, rgba(10,10,10,var(--scrim-3)) 100%),
     url('../images/bg-web.jpg') center 38% / cover no-repeat;
   background-color: var(--ink);
   color: var(--on-ink);
@@ -636,7 +649,7 @@ section{ position: relative; }
 
 .final-cta{
   background:
-    linear-gradient(180deg, rgba(10,10,10,0.90) 0%, rgba(10,10,10,0.82) 55%, rgba(10,10,10,0.92) 100%),
+    linear-gradient(180deg, rgba(10,10,10,var(--scrim-1)) 0%, rgba(10,10,10,var(--scrim-2)) 55%, rgba(10,10,10,var(--scrim-3)) 100%),
     url('../images/October 15/pexels-karola-g-7281586.jpg') center 35% / cover no-repeat;
   background-color: var(--ink);
   color: var(--on-ink);
@@ -646,19 +659,19 @@ section{ position: relative; }
 }
 .final-cta.has-photo-izmir{
   background:
-    linear-gradient(180deg, rgba(10,10,10,0.90) 0%, rgba(10,10,10,0.82) 55%, rgba(10,10,10,0.92) 100%),
+    linear-gradient(180deg, rgba(10,10,10,var(--scrim-1)) 0%, rgba(10,10,10,var(--scrim-2)) 55%, rgba(10,10,10,var(--scrim-3)) 100%),
     url('../images/October 15/pexels-izmir-38392595.jpg') center 78% / cover no-repeat;
   background-color: var(--ink);
 }
 .final-cta.has-photo-onbab{
   background:
-    linear-gradient(180deg, rgba(10,10,10,0.90) 0%, rgba(10,10,10,0.82) 55%, rgba(10,10,10,0.92) 100%),
+    linear-gradient(180deg, rgba(10,10,10,var(--scrim-1)) 0%, rgba(10,10,10,var(--scrim-2)) 55%, rgba(10,10,10,var(--scrim-3)) 100%),
     url('../images/October 15/pexels-onbab-banner.jpg') center center / cover no-repeat;
   background-color: var(--ink);
 }
 .final-cta.has-photo-polina{
   background:
-    linear-gradient(180deg, rgba(10,10,10,0.90) 0%, rgba(10,10,10,0.82) 55%, rgba(10,10,10,0.92) 100%),
+    linear-gradient(180deg, rgba(10,10,10,var(--scrim-1)) 0%, rgba(10,10,10,var(--scrim-2)) 55%, rgba(10,10,10,var(--scrim-3)) 100%),
     url('../images/October 15/pexels-polina-tankilevitch-5585792.jpg') 75% 28% / cover no-repeat;
   background-color: var(--ink);
 }
@@ -709,31 +722,31 @@ section{ position: relative; }
 .page-head{ padding: 7.5rem 0 var(--gap-lg); background: var(--ink); color: var(--on-ink); position: relative; }
 .page-head.has-photo{
   background:
-    linear-gradient(180deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.82) 55%, rgba(10,10,10,0.94) 100%),
+    linear-gradient(180deg, rgba(10,10,10,var(--scrim-1)) 0%, rgba(10,10,10,var(--scrim-2)) 55%, rgba(10,10,10,var(--scrim-3)) 100%),
     url('../images/bg-social.jpg') center 30% / cover no-repeat;
   background-color: var(--ink);
 }
 .page-head.has-photo-services{
   background:
-    linear-gradient(180deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.82) 55%, rgba(10,10,10,0.94) 100%),
+    linear-gradient(180deg, rgba(10,10,10,var(--scrim-1)) 0%, rgba(10,10,10,var(--scrim-2)) 55%, rgba(10,10,10,var(--scrim-3)) 100%),
     url('../images/pexels-markus-winkler-banner.jpg') center center / cover no-repeat;
   background-color: var(--ink);
 }
 .page-head.has-photo-about{
   background:
-    linear-gradient(180deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.82) 55%, rgba(10,10,10,0.94) 100%),
+    linear-gradient(180deg, rgba(10,10,10,var(--scrim-1)) 0%, rgba(10,10,10,var(--scrim-2)) 55%, rgba(10,10,10,var(--scrim-3)) 100%),
     url('../images/pexels-plann-2999237-4549414.jpg') center 35% / cover no-repeat;
   background-color: var(--ink);
 }
 .on-ink.has-photo-lyneth{
   background:
-    linear-gradient(180deg, rgba(10,10,10,0.93) 0%, rgba(10,10,10,0.86) 55%, rgba(10,10,10,0.93) 100%),
+    linear-gradient(180deg, rgba(10,10,10,var(--scrim-1)) 0%, rgba(10,10,10,var(--scrim-2)) 55%, rgba(10,10,10,var(--scrim-3)) 100%),
     url('../images/lyneth-presenting.jpg') center 30% / cover no-repeat;
   background-color: var(--ink);
 }
 .page-head.has-photo-contact{
   background:
-    linear-gradient(180deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.82) 55%, rgba(10,10,10,0.94) 100%),
+    linear-gradient(180deg, rgba(10,10,10,var(--scrim-1)) 0%, rgba(10,10,10,var(--scrim-2)) 55%, rgba(10,10,10,var(--scrim-3)) 100%),
     url('../images/pexels-walls-io-440716388-15505437.jpg') center 82% / cover no-repeat;
   background-color: var(--ink);
 }
