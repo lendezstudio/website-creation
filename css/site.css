@@ -432,6 +432,8 @@ section{ position: relative; }
 .work-tag.is-client{ background: var(--accent); color: var(--white); }
 .work-tag.is-ongoing{ background: transparent; color: var(--accent); border: 1px solid var(--accent); }
 .work-card-cat{ font-size: 0.78rem; color: var(--on-ink-faint); margin-bottom: 0.3rem; display: block; }
+.work-card-location{ display: flex; align-items: center; gap: 0.3rem; font-size: 0.78rem; color: var(--on-ink-faint); margin-bottom: 0.5rem; }
+.work-card-location svg{ width: 12px; height: 12px; flex-shrink: 0; }
 .work-card h3{ font-size: clamp(1.15rem, 1.8vw, 1.6rem); color: var(--on-ink); margin-bottom: 0.5rem; }
 .work-card p{ color: var(--on-ink-soft); font-size: 0.88rem; max-width: 36ch; margin-bottom: 0; }
 .work-card .wc-arrow{
