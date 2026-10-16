@@ -401,9 +401,10 @@ section{ position: relative; }
 .svc-accounts a{ display: flex; align-items: center; gap: 0.9rem; padding: 0.85rem 1.3rem; border-top: 1px solid var(--line-paper); font-size: 0.88rem; font-weight: 600; color: var(--on-paper); transition: background 0.2s ease, color 0.2s ease; }
 .svc-accounts a:first-child{ border-top: none; }
 .svc-accounts a:hover{ background: var(--paper); color: var(--accent-deep); }
-.svc-accounts a:hover .icon-chip{ transform: translateY(-1px); }
-.svc-accounts .icon-group{ display: flex; align-items: center; gap: 0.4rem; flex-shrink: 0; width: 132px; }
-.svc-accounts .icon-chip{ width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform 0.2s ease; }
+.svc-accounts a:hover .icon-chip{ transform: translateY(-1px); border-color: var(--paper); }
+.svc-accounts .icon-group{ display: flex; align-items: center; flex-shrink: 0; width: 132px; }
+.svc-accounts .icon-chip{ width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform 0.2s ease, border-color 0.2s ease; margin-left: -8px; border: 2px solid var(--paper-2); }
+.svc-accounts .icon-chip:first-child{ margin-left: 0; }
 .svc-accounts .icon-chip svg{ width: 14px; height: 14px; }
 .svc-accounts .chip-tiktok{ background: var(--ink); color: var(--white); }
 .svc-accounts .chip-fb{ background: var(--ink); color: #1877F2; }
