@@ -383,9 +383,9 @@ section{ position: relative; }
 .svc-row:hover .svc-media img{ transform: scale(1.06); }
 .svc-tag{ position: absolute; left: 1rem; bottom: 1rem; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--on-ink); background: rgba(16,16,16,0.72); backdrop-filter: blur(4px); padding: 0.45rem 0.9rem; border-radius: 100px; }
 
-.svc-accounts{ margin-top: 1.8rem; display: grid; gap: 0.5rem; }
+.svc-accounts{ margin-top: 1.8rem; display: grid; gap: 1.1rem; }
 .svc-accounts-label{ font-size: var(--fs-label); font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--on-paper-faint); margin-bottom: 0.4rem; }
-.svc-accounts a{ display: flex; align-items: center; gap: 0.6rem; font-size: 0.88rem; font-weight: 600; padding: 0.3rem 0; color: var(--on-paper); }
+.svc-accounts a{ display: flex; flex-direction: column; align-items: flex-start; gap: 0.5rem; font-size: 0.88rem; font-weight: 600; padding: 0.3rem 0; color: var(--on-paper); }
 .svc-accounts a:hover{ color: var(--accent-deep); }
 .svc-accounts svg{ width: 15px; height: 15px; flex-shrink: 0; }
 .svc-accounts .icon-group{ display: flex; align-items: center; gap: 0.35rem; flex-shrink: 0; }
@@ -653,7 +653,7 @@ section{ position: relative; }
 .final-cta.has-photo-onbab{
   background:
     linear-gradient(180deg, rgba(10,10,10,0.90) 0%, rgba(10,10,10,0.82) 55%, rgba(10,10,10,0.92) 100%),
-    url('../images/October 15/pexels-onbab-17789335.jpg') center 42% / cover no-repeat;
+    url('../images/October 15/pexels-onbab-banner.jpg') center center / cover no-repeat;
   background-color: var(--ink);
 }
 .final-cta.has-photo-polina{
@@ -716,7 +716,7 @@ section{ position: relative; }
 .page-head.has-photo-services{
   background:
     linear-gradient(180deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.82) 55%, rgba(10,10,10,0.94) 100%),
-    url('../images/pexels-markus-winkler-1430818-30885764.jpg') center 68% / cover no-repeat;
+    url('../images/pexels-markus-winkler-banner.jpg') center center / cover no-repeat;
   background-color: var(--ink);
 }
 .page-head.has-photo-about{
