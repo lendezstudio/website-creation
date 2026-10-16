@@ -403,7 +403,7 @@ section{ position: relative; }
 .svc-accounts a:hover{ background: var(--paper); color: var(--accent-deep); }
 .svc-accounts a:hover .icon-chip{ transform: translateY(-1px); }
 .svc-accounts .icon-group{ display: flex; align-items: center; gap: 0.4rem; flex-shrink: 0; width: 132px; }
-.svc-accounts .icon-chip{ width: 28px; height: 28px; border-radius: 9px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform 0.2s ease; }
+.svc-accounts .icon-chip{ width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform 0.2s ease; }
 .svc-accounts .icon-chip svg{ width: 14px; height: 14px; }
 .svc-accounts .chip-tiktok{ background: rgba(0,0,0,0.07); color: #000; }
 .svc-accounts .chip-fb{ background: rgba(24,119,242,0.12); color: #1877F2; }
