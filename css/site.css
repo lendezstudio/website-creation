@@ -406,9 +406,9 @@ section{ position: relative; }
 .svc-accounts .icon-chip{ width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: transform 0.2s ease; }
 .svc-accounts .icon-chip svg{ width: 14px; height: 14px; }
 .svc-accounts .chip-tiktok{ background: var(--ink); color: var(--white); }
-.svc-accounts .chip-fb{ background: rgba(24,119,242,0.12); color: #1877F2; }
-.svc-accounts .chip-ig{ background: rgba(228,64,95,0.12); color: #E4405F; }
-.svc-accounts .chip-yt{ background: rgba(255,0,0,0.12); color: #FF0000; }
+.svc-accounts .chip-fb{ background: var(--ink); color: #1877F2; }
+.svc-accounts .chip-ig{ background: var(--ink); color: #E4405F; }
+.svc-accounts .chip-yt{ background: var(--ink); color: #FF0000; }
 .svc-accounts .acc-text{ line-height: 1.4; }
 .svc-accounts .acc-note{ font-weight: 400; color: var(--on-paper-faint); }
 .svc-accounts .acc-arrow{ margin-left: auto; width: 26px; height: 26px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--paper); color: var(--on-paper-faint); flex-shrink: 0; transition: all 0.2s ease; }
