@@ -388,6 +388,7 @@ section{ position: relative; }
 .svc-accounts a{ display: flex; align-items: center; gap: 0.6rem; font-size: 0.88rem; font-weight: 600; padding: 0.3rem 0; color: var(--on-paper); }
 .svc-accounts a:hover{ color: var(--accent-deep); }
 .svc-accounts svg{ width: 15px; height: 15px; flex-shrink: 0; }
+.svc-accounts .icon-group{ display: flex; align-items: center; gap: 0.35rem; flex-shrink: 0; }
 .svc-accounts .acc-note{ font-weight: 400; color: var(--on-paper-faint); }
 
 @media (max-width: 980px){
@@ -561,7 +562,7 @@ section{ position: relative; }
 @media (max-width: 900px){ .about-hero{ grid-template-columns: 1fr; gap: var(--gap-md); } }
 
 .about-story{ max-width: 68ch; }
-.about-story p.pull{
+.pull{
   font-family: var(--font-display); font-weight: 500; font-style: normal;
   font-size: clamp(1.3rem, 2.4vw, 1.9rem); line-height: 1.35; color: var(--on-paper);
   margin: 2rem 0; max-width: 24ch;
@@ -652,7 +653,7 @@ section{ position: relative; }
 .final-cta.has-photo-onbab{
   background:
     linear-gradient(180deg, rgba(10,10,10,0.90) 0%, rgba(10,10,10,0.82) 55%, rgba(10,10,10,0.92) 100%),
-    url('../images/October 15/pexels-onbab-17789335.jpg') center 10% / cover no-repeat;
+    url('../images/October 15/pexels-onbab-17789335.jpg') center 42% / cover no-repeat;
   background-color: var(--ink);
 }
 .final-cta.has-photo-polina{
@@ -715,7 +716,7 @@ section{ position: relative; }
 .page-head.has-photo-services{
   background:
     linear-gradient(180deg, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.82) 55%, rgba(10,10,10,0.94) 100%),
-    url('../images/pexels-markus-winkler-1430818-30885764.jpg') center 35% / cover no-repeat;
+    url('../images/pexels-markus-winkler-1430818-30885764.jpg') center 68% / cover no-repeat;
   background-color: var(--ink);
 }
 .page-head.has-photo-about{
