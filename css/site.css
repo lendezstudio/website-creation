@@ -797,7 +797,7 @@ section{ position: relative; }
 .cs-section p{ margin-top: 1rem; }
 
 .cs-shot{ border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line-paper); background: var(--paper-2); }
-.cs-shot img{ width: 100%; display: block; }
+.cs-shot img{ width: 100%; height: auto; display: block; }
 .cs-shot-cap{ font-size: 0.82rem; color: var(--on-paper-faint); margin-top: 0.7rem; }
 
 .cs-gallery{ display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: var(--gap-md); }
