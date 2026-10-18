@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=10">
+<link rel="stylesheet" href="css/site.css?v=11">
 </head>
 <body class="hero-dark">
 <a class="skip-link" href="#main">Skip to content</a>
@@ -133,7 +133,15 @@
               <input type="tel" id="phone" name="phone" autocomplete="tel">
             </div>
             <div class="field">
-              <label for="website">Current Website <span class="opt">(if any)</span></label>
+              <label for="has_website">Do You Currently Have a Website?</label>
+              <select id="has_website" name="has_website">
+                <option value="" selected disabled>Select one</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="field" id="website-field" hidden>
+              <label for="website">Current Website</label>
               <input type="text" id="website" name="website" placeholder="e.g. facebook.com/yourbusiness">
             </div>
             <div class="field">

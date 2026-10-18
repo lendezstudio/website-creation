@@ -127,6 +127,17 @@
     var status = document.querySelector("#form-status");
     var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+    // Reveal the website-URL field only when the visitor says they have one.
+    var hasWebsiteSelect = form.elements["has_website"];
+    var websiteField = document.querySelector("#website-field");
+    if (hasWebsiteSelect && websiteField) {
+      hasWebsiteSelect.addEventListener("change", function () {
+        var show = hasWebsiteSelect.value === "yes";
+        websiteField.hidden = !show;
+        if (!show) { form.elements["website"].value = ""; }
+      });
+    }
+
     // Fields that must be completed before the inquiry can be sent.
     var REQUIRED = [
       { name: "name", message: "Please enter your name." },
@@ -210,12 +221,17 @@
       var data = new FormData(form);
       function get(k) { return (data.get(k) || "").toString().trim(); }
 
+      var hasWebsite = get("has_website");
+      var websiteLine = hasWebsite === "yes"
+        ? "Yes, " + (get("website") || "URL not provided")
+        : hasWebsite === "no" ? "No" : "Not specified";
+
       var lines = [
         "Name: " + get("name"),
         "Business: " + get("business"),
         "Email: " + get("email"),
         "Phone / WhatsApp: " + get("phone"),
-        "Current website: " + (get("website") || "None"),
+        "Has a website: " + websiteLine,
         "Industry: " + get("industry"),
         "What they need: " + get("project_type"),
         "",
