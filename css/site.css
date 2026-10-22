@@ -367,7 +367,7 @@ section{ position: relative; }
   max-width: 26ch;
 }
 .statement-text .dim{ color: var(--on-paper-faint); }
-.statement-foot{ display: flex; justify-content: space-between; align-items: flex-end; gap: var(--gap-md); margin-top: var(--gap-lg); flex-wrap: wrap; }
+.statement-foot{ display: flex; flex-direction: column; gap: var(--gap-md); margin-top: var(--gap-lg); }
 .statement-foot p{ max-width: 40ch; margin: 0; }
 
 /* ---------- Services (bold numbered rows) ---------- */
